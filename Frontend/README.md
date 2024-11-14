@@ -48,6 +48,8 @@ To get a local copy of the project up and running, follow these steps.
 ## Environment Variables
 Create a `.env` file in the root directory of the `backend` folder and add the following variables:
 
+
+
 house-rental-web-app/
 ├── backend/
 │   ├── config/          # Environment and database configuration
