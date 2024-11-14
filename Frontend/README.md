@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# House Rental Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive MERN stack application designed for users to browse, list, and rent properties. The application includes user authentication, property listing, search functionality, and a responsive design optimized for both mobile and desktop views.
 
-## Available Scripts
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Installation](#installation)
+- [Available Scripts](#available-scripts)
+- [Folder Structure](#folder-structure)
+- [API Documentation](#api-documentation)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Demo
+Access the live version of the application here: [https://your-demo-url.com](https://your-demo-url.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- **User Authentication**: Register and login functionality with JWT-based authentication.
+- **Property Listings**: List, view, and delete property listings.
+- **Search and Filter**: Search properties based on location, type, and price range.
+- **Responsive Design**: Fully responsive UI with Material UI and Bootstrap, ensuring usability on mobile and desktop.
+- **User Dashboard**: View and manage user profile, listed properties, and rented properties.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
+- **Frontend**: React, Axios, Ant Design, Material UI, Bootstrap, mdb-react-ui-kit, Moment.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Mongoose ODM
+- **Authentication**: JWT (JSON Web Tokens)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+To get a local copy of the project up and running, follow these steps.
 
-### `npm run build`
+### Prerequisites
+- **Node.js**: Install from [Node.js downloads](https://nodejs.org/en/download/)
+- **MongoDB**: Local MongoDB setup or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Environment Variables
+Create a `.env` file in the root directory of the `backend` folder and add the following variables:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+house-rental-web-app/
+├── backend/
+│   ├── config/          # Environment and database configuration
+│   ├── controllers/     # Route controllers
+│   ├── middleware/      # Middleware functions
+│   ├── models/          # Mongoose models
+│   ├── routes/          # API routes
+│   ├── index.js         # Entry point
+│   └── .env             # Environment variables
+├── frontend/
+│   ├── public/          # Public assets
+│   ├── src/
+│       ├── components/  # React components
+│       ├── pages/       # Page components (Home, Login, Register, etc.)
+│       ├── services/    # API calls and services
+│       └── App.js       # Main application component
+└── README.md            # Project documentation
