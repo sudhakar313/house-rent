@@ -19,7 +19,7 @@ A comprehensive MERN stack application designed for users to browse, list, and r
 ---
 
 ## Demo
-Access the live version of the application here: [https://your-demo-url.com](https://your-demo-url.com)
+Access the live version of the application here: [https://your-demo-url.com](-------)
 
 ## Features
 - **User Authentication**: Register and login functionality with JWT-based authentication.
